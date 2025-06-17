@@ -1,0 +1,23 @@
+
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	      int [] a = {12,345,3,2,6,789};
+	      for(int i=0; i<a.length-1;i++)
+	      {
+	          for(int j=0; j<a.length-1-i; j++)
+	          {
+	              if(a[j]>a[j+1])
+	              {
+	                  a[j]=a[j]+a[j+1];
+	                  a[j+1]=a[j]-a[j+1];
+	                  a[j]=a[j]-a[j+1];
+	              }
+	          }
+	      }
+	      for(int k=0; k<a.length; k++)
+	      System.out.println(a[k]);
+	    
+	}
+}

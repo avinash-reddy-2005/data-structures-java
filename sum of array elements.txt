@@ -1,0 +1,15 @@
+public class Main
+{
+	public int fun(int[] a, int i,int sum)
+	{
+	    if(i==a.length) return sum;
+	    sum+=a[i];
+	    return fun(a,i+1,sum);
+	}
+	public static void main(String args[])
+	{
+		Main m = new Main();
+		int[]a={12,3,4,5,3,5,4};
+		System.out.println(m.fun(a,0,0));
+	}
+}

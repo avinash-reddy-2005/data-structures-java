@@ -1,0 +1,21 @@
+public class Main {
+    public static void main(String[] args) {
+        int[] a = {12, 345, 3, 2, 6, 789};
+        for (int i = 0; i < a.length - 1; i++) {
+            int m = i;
+
+            for (int j = i + 1; j < a.length; j++) {
+                if (a[j] < a[m]) {
+                    m = j; 
+                }
+            }
+            int temp = a[i];
+            a[i] = a[m];
+            a[m] = temp;
+        }
+
+        for (int k = 0; k < a.length; k++) {
+            System.out.print(a[k] + ",");
+        }
+    }
+}

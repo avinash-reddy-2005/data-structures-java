@@ -1,0 +1,21 @@
+public class Main
+{
+	public String fun(int n)
+	{
+		if(n==11) 
+		{
+		    System.out.println("avinash");
+		    return "biryani";
+		}
+		System.out.println(n);
+		String s = fun(n+1);
+		System.out.println(n);
+		return s;
+		
+	}
+	public static void main(String args[])
+	{
+		Main m = new Main();
+		m.fun(1);
+	}
+}
